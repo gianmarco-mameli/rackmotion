@@ -10,7 +10,7 @@ WiFiClient espClient;
 PubSubClient client(espClient);
 
 // mqtt
-const char *mqtt_broker = "192.168.1.1";
+const char mqtt_broker[] = MQTT_BROKER;
 const int mqtt_port = 1883;
 const char *client_id = "rackmotion";
 const char *status_topic = "rackmotion/status";
